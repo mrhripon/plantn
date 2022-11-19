@@ -287,6 +287,11 @@ header.change-bg .main-menu .navbar-nav {
   font-weight: 700;
 }
 
+.btn:hover {
+  background-color: var(--primary_color);
+  color: var(--white);
+}
+
 .btn:focus,
 .btn:active {
   box-shadow: none;
@@ -333,7 +338,7 @@ header.change-bg .main-menu .navbar-nav {
   letter-spacing: .2px;
 }
 
-.section-title h2 .badge {
+.section-title .badge {
   background: rgba(131, 194, 95, 0.25);
   border-radius: 2px;
   font-weight: 500;
@@ -651,4 +656,53 @@ header.change-bg .main-menu .navbar-nav {
   padding: 90px;
 }
 
+.report-content.div_overlay::after {
+  background: rgba(30, 30, 30, 0.6);
+}
+
+.section-title.type-2 p {
+  margin-bottom: 13px;
+  font-size: 20px;
+  font-family: Poppins;
+}
+
 /* report-area css end */
+
+
+/* footer css start */
+
+.footer-area {
+  background-color: #F6F7F9;
+  padding-top: 90px;
+}
+
+.footer-top-part {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1.4fr;
+}
+
+.ft-links li a {
+  display: inline-block;
+  color: var(--primary_color);
+  opacity: 0.5;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.ft-links li a:hover {
+  opacity: 1;
+}
+
+.ft-links li:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.footer-widget h4 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--primary_color);
+  margin-bottom: 14px;
+}
+
+/* footer css end */
