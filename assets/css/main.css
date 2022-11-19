@@ -61,6 +61,10 @@ ol {
 
 
 /* utility css start  */
+.container {
+  max-width: 1300px;
+}
+
 .f_poppins {
   font-family: 'Poppins', sans-serif;
 }
@@ -666,19 +670,60 @@ header.change-bg .main-menu .navbar-nav {
   font-family: Poppins;
 }
 
+.sec-img img {
+  border-radius: 5px;
+}
+
 /* report-area css end */
 
 
-/* footer css start */
+/* faq-area css start */
+.accordion .accordion-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  border-left: 0;
+  border-right: 0;
+  color: var(--primary_color);
+  border-radius: 0 !important;
+}
 
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+  background-color: transparent;
+  color: var(--primary_color)
+}
+
+.accordion-body p {
+  color: var(--primary_color);
+  opacity: .6;
+  font-size: 16px;
+}
+
+.accordion-button {
+  font-family: Poppins;
+  font-weight: 500;
+  color: var(--primary_color);
+  padding: 15px 10px;
+}
+
+.accordion-item:first-of-type .accordion-button {
+  border-radius: 0 !important;
+}
+
+/* faq-area css end */
+
+
+/* footer css start */
 .footer-area {
   background-color: #F6F7F9;
-  padding-top: 90px;
+  padding-top: 80px;
 }
 
 .footer-top-part {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1.4fr;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr 1.4fr;
+  grid-gap: 30px;
+  margin-bottom: 45px;
 }
 
 .ft-links li a {
@@ -704,5 +749,104 @@ header.change-bg .main-menu .navbar-nav {
   color: var(--primary_color);
   margin-bottom: 14px;
 }
+
+.footer-widget p {
+  color: var(--primary_color);
+  opacity: .5;
+  font-size: 16px;
+}
+
+.ct-links li {
+  font-size: 16px;
+  color: var(--primary_color);
+}
+
+.ct-links .link-icon {
+  display: inline-block;
+  width: 15px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.ct-links li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.terms li a {
+  font-weight: 500;
+  color: var(--primary_color);
+  text-decoration: none;
+  font-family: Poppins;
+  display: inline-block;
+  font-size: 14px;
+  opacity: .6;
+  transition: .3s;
+}
+
+.terms li a:hover {
+  opacity: 1;
+}
+
+.terms li:not(:last-child) {
+  margin-right: 24px;
+}
+
+.footer-bottom-part {
+  border-top: 1px solid rgba(33, 33, 33, 0.2);
+  padding: 30px 0;
+}
+
+.ft-logo {
+  max-width: 80px;
+  transform: translateY(-5px);
+}
+
+.social-links li a {
+  border: 1.5px solid rgba(35, 38, 47, 0.1);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+}
+
+.social-links li a:hover {
+  border-color: var(--primary_color);
+}
+
+.social-links li:not(:last-child) {
+  margin-right: 15px;
+}
+
+.newsletter.input-group .form-control {
+  border: 1px solid var(--theme_color);
+}
+
+.newsletter.input-group .btn {
+  width: 44px;
+  padding: 0;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter.input-group+p {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Poppins;
+  margin: 0;
+  margin-top: 7px;
+}
+
+.form-control:focus {
+  color: var(--primary_color);
+  border-color: var(--theme_color);
+  outline: 0;
+  box-shadow: 0 0 0 .25rem rgba(131, 194, 95, 0.25);
+}
+
 
 /* footer css end */
