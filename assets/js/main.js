@@ -17,4 +17,20 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
+    // Script for mobile menu background 
+    if (document.querySelector('.navbar-toggler') !== null) {
+        document.querySelector('.navbar-toggler').addEventListener('click', function (event) {
+            let toggleBtn = event.target.closest('.navbar-toggler');
+            if (toggleBtn.classList.value == 'navbar-toggler collapsed' && (getDistance() - window.pageYOffset) > 0) {
+
+                header.classList.remove('change-bg');
+            }
+            else {
+                header.classList.add('change-bg');
+            }
+
+        })
+    }
+
+
 })
