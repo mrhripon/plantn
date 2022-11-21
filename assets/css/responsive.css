@@ -26,6 +26,10 @@
     .footer-top-part {
         grid-template-columns: 1.5fr 1fr 1fr 1fr;
     }
+
+    .optional-wrap ul {
+        min-height: 78px;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -83,6 +87,14 @@
 
     .footer-area {
         padding-top: 60px;
+    }
+
+    .section-title.type-2 h2 {
+        margin-bottom: 26px !important;
+    }
+
+    .section-title.type-2 p.mb-4 {
+        margin-bottom: 13px !important;
     }
 
 }
@@ -267,6 +279,46 @@
     .main-menu .nav-item {
         margin-left: 0;
         margin-top: 15px;
+    }
+
+    .package-benefits-wrap .para p,
+    .optional-wrap ul li {
+        font-size: 15px;
+    }
+
+    .package-benefits-wrap .para {
+        min-height: auto;
+        max-width: 290px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .optional-wrap ul {
+        min-height: auto;
+    }
+
+    .hero-content.type-2 p {
+        font-size: 17px;
+    }
+
+    .hero-content.type-2 h1 {
+        font-size: 40px;
+    }
+
+    .section-title p {
+        font-size: 17px;
+    }
+
+    .cmn-list li {
+        font-size: 15px;
+    }
+
+    .section-title h2 br {
+        display: none;
+    }
+
+    .type-2 .report-content {
+        padding: 40px 20px;
     }
 
 
